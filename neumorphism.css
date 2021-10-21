@@ -114,7 +114,7 @@
     padding: 0;
     display: inline-block;
     width: 500px;
-    max-width: 100%;
+    max-width: 100vw;
     height: 10px;
     position: relative;
     border-radius: 99px;
