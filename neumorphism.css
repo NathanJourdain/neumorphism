@@ -1,0 +1,126 @@
+.neumorphism{
+    padding: 15px;
+    border: none;
+}
+
+
+/* LES BOUTONS */
+.neumorphism.btn{
+
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  11px 11px 22px #9d9d9d,
+                 -11px -11px 22px #ffffff;
+    cursor: pointer;
+}
+
+.neumorphism.btn:active{
+    box-shadow: inset 11px 11px 22px #9d9d9d,
+                inset -11px -11px 22px #ffffff;
+}
+
+.neumorphism.btn.circle{
+    border-radius: 50%;
+}
+.neumorphism.btn.rect{
+    border-radius: 10px;
+}
+
+
+
+/* LES INPUTS */
+.neumorphism.input{
+    box-shadow: inset 5px 5px 11px #9d9d9d,
+                inset -5px -5px 11px #ffffff;
+}
+.neumorphism.select{
+    cursor: pointer;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  11px 11px 22px #9d9d9d,
+                 -11px -11px 22px #ffffff;
+}
+
+/* LES TOGGLE RADIO */
+.neumorphism.switch{
+    width: 50px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+}
+.neumorphism.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.neumorphism.switch span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  11px 11px 22px #9d9d9d inset,
+                 -11px -11px 22px #ffffff inset;
+    border-radius: 5px;
+    border-radius: 999px;
+
+}
+.neumorphism.switch span:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 50%;
+    transform : translateY(-50%);
+    aspect-ratio: 1 / 1;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+
+    transition: transform 0.2s;
+}
+.neumorphism.switch input:checked + span:before{
+    transform : translateY(-50%) translateX(80%);
+    background-color: rgb(43, 193, 243);
+}
+
+/* TEXTE UNDERLINE */
+.neumorphism.underline{
+    padding: 0;
+    position: relative;
+    width: max-content;
+}
+.neumorphism.underline:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -0.125em;
+    width: 100%;
+    height: 0.125em;
+    background-color: #e0e0e0;
+    box-shadow: 0.125em 0.125em 0.125em #9d9d9d;    
+}
+
+
+
+
+/* progress-barProgress bar */
+.neumorphism.progress-bar{
+    padding: 0;
+    display: inline-block;
+    width: 500px;
+    height: 10px;
+    position: relative;
+    border-radius: 99px;
+    box-shadow: inset 5px 5px 11px #9d9d9d,
+                inset -5px -5px 11px #ffffff;
+}
+.neumorphism.progress-bar:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(43, 193, 243);
+    border-radius: 99px;
+}

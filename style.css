@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body{
+    background-color: #e0e0e0;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main > * {margin: 25px;}
+
+h1{
+    color: rgb(43, 119, 145);
+    font-weight: 600;
+}
+
+.download-btn{
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: black;
+  border: 1px solid rgb(43, 119, 145);
+}
+
+
+
+
+
+
+
+
+.neumorphism.progress-bar:before{
+    animation: progress 5s infinite alternate ease-in-out;
+}
+@keyframes progress {
+    to{width: 100%;}
+}
