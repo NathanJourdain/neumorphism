@@ -1,3 +1,10 @@
+:root{
+    --primary-color:#e0e0e0;
+    --second-color: #ffffff;
+    --third-color: #9d9d9d;
+    --blue-color : rgb(43, 193, 243);
+}
+
 .neumorphism{
     padding: 15px;
     border: none;
@@ -7,15 +14,15 @@
 /* LES BOUTONS */
 .neumorphism.btn{
 
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  11px 11px 22px #9d9d9d,
-                 -11px -11px 22px #ffffff;
+    background: linear-gradient(145deg, var(--second-color), var(--primary-colorr));
+    box-shadow:  11px 11px 22px var(--third-color),
+                 -11px -11px 22px var(--second-color);
     cursor: pointer;
 }
 
 .neumorphism.btn:active{
-    box-shadow: inset 11px 11px 22px #9d9d9d,
-                inset -11px -11px 22px #ffffff;
+    box-shadow: inset 11px 11px 22px var(--third-color),
+                inset -11px -11px 22px var(--second-color);
 }
 
 .neumorphism.btn.circle{
@@ -29,14 +36,14 @@
 
 /* LES INPUTS */
 .neumorphism.input{
-    box-shadow: inset 5px 5px 11px #9d9d9d,
-                inset -5px -5px 11px #ffffff;
+    box-shadow: inset 5px 5px 11px var(--third-color),
+                inset -5px -5px 11px var(--second-color);
 }
 .neumorphism.select{
     cursor: pointer;
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  11px 11px 22px #9d9d9d,
-                 -11px -11px 22px #ffffff;
+    background: linear-gradient(145deg, var(--second-color), var(--primary-color));
+    box-shadow:  11px 11px 22px var(--third-color),
+                 -11px -11px 22px var(--second-color);
 }
 
 /* LES TOGGLE RADIO */
@@ -58,9 +65,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  11px 11px 22px #9d9d9d inset,
-                 -11px -11px 22px #ffffff inset;
+    background: linear-gradient(145deg, var(--second-color), var(--primary-color));
+    box-shadow:  11px 11px 22px var(--third-color) inset,
+                 -11px -11px 22px var(--second-color) inset;
     border-radius: 5px;
     border-radius: 999px;
 
@@ -73,14 +80,14 @@
     width: 50%;
     transform : translateY(-50%);
     aspect-ratio: 1 / 1;
-    background-color: #e0e0e0;
+    background-color: var(--primary-color);
     border-radius: 50%;
 
     transition: transform 0.2s;
 }
 .neumorphism.switch input:checked + span:before{
     transform : translateY(-50%) translateX(80%);
-    background-color: rgb(43, 193, 243);
+    background-color: var(--blue-color);
 }
 
 /* TEXTE UNDERLINE */
@@ -96,8 +103,8 @@
     left: -0.125em;
     width: 100%;
     height: 0.125em;
-    background-color: #e0e0e0;
-    box-shadow: 0.125em 0.125em 0.125em #9d9d9d;    
+    background-color: var(--primary-color);
+    box-shadow: 0.125em 0.125em 0.125em var(--third-color);    
 }
 
 
@@ -111,8 +118,8 @@
     height: 10px;
     position: relative;
     border-radius: 99px;
-    box-shadow: inset 5px 5px 11px #9d9d9d,
-                inset -5px -5px 11px #ffffff;
+    box-shadow: inset 5px 5px 11px var(--third-color),
+                inset -5px -5px 11px var(--second-color);
 }
 .neumorphism.progress-bar:before{
     content: "";
@@ -121,6 +128,6 @@
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: rgb(43, 193, 243);
+    background-color: var(--blue-color);
     border-radius: 99px;
 }
