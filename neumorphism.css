@@ -13,7 +13,6 @@
 
 /* LES BOUTONS */
 .neumorphism.btn{
-
     background: linear-gradient(145deg, var(--second-color), var(--primary-colorr));
     box-shadow:  11px 11px 22px var(--third-color),
                  -11px -11px 22px var(--second-color);
@@ -115,6 +114,7 @@
     padding: 0;
     display: inline-block;
     width: 500px;
+    max-width: 100%;
     height: 10px;
     position: relative;
     border-radius: 99px;

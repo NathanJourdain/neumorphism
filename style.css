@@ -21,6 +21,8 @@ h1{
   font-weight: 600;
   color: black;
   border: 1px solid rgb(43, 119, 145);
+  max-width: 80vw;
+  font-size: 16px
 }
 
 
@@ -61,4 +63,11 @@ em{
 }
 @keyframes progress {
     to{width: 100%;}
+}
+
+
+@media screen and (max-width : 450px) {
+    body{
+        padding: 20px;
+    }
 }
