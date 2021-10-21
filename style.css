@@ -11,6 +11,7 @@ main > * {margin: 25px;}
 h1{
     color: rgb(43, 119, 145);
     font-weight: 600;
+    text-align: center;
 }
 
 .download-btn{
@@ -23,7 +24,22 @@ h1{
 }
 
 
-
+p.description{
+    padding-left: 0.5em;
+    position: relative;
+}
+p.description:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #0000007a;
+}
+em{
+    background-color: rgba(43, 119, 145,0.5) ;
+}
 
 
 
